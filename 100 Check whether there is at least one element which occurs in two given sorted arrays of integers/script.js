@@ -1,0 +1,12 @@
+function checkCommonElement(arra1, arra2) {
+    for (var i = 0; i < arra1.length; i++) {
+        if (arra2.indexOf(arra1[i]) != -1) {
+            return true;
+        }
+
+    }
+    return false;
+}
+
+console.log(checkCommonElement([1, 2, 3], [3, 4, 5]));
+console.log(checkCommonElement([1, 2, 3], [5, 6, 7]));
